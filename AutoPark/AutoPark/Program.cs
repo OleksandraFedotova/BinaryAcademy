@@ -11,7 +11,7 @@ namespace AutoPark
         static void Main(string[] args)
         {
             Auto car = new Auto(1223, "Ford", 1243581);
-            string a = Auto.GetInfo(car);
+            string a = Auto.GetInformation(car);
         }
     }
 
@@ -28,9 +28,9 @@ namespace AutoPark
             this.price = price;
         }
 
-        public static string GetInfo(Auto a)
+        public static string GetInformation(Auto a)
         {
-            return "model" + a.model + ",id=" + a.number + " costs" + a.price;
+            return "model of car:" + a.model + ", id=" + a.number + ",price" + a.price;
         }
     }
 }
